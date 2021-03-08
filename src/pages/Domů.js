@@ -29,7 +29,7 @@ function Domů() {
       </Helmet>
       <main>
         <section id="home-page">
-          <h1>Ahoj, jsem Dominik</h1>
+          <h1>Tohle je TEST</h1>
           <h2>Vítej na mé stránce</h2>
           <h3>Vytvářím webové stránky pomocí HTML, CSS a Javascriptu.</h3>
           <div id="images">
