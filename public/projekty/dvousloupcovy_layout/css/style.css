@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(223, 223, 29);
+}
+main {
+  overflow: hidden;
+}
+header {
+  padding: 6vh;
+  font-size: 5vh;
+  margin-top: 0.6vw;
+}
+nav a p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+  padding: 4vh;
+}
+header,
+footer,
+a {
+  background-color: rgb(36, 118, 219);
+}
+section,
+footer {
+  font-size: 3vw;
+}
+nav {
+  width: 25%;
+  float: left;
+}
+a {
+  height: 15vh;
+  text-decoration: none;
+}
+.first {
+  margin-right: 3vw;
+}
+i {
+  font-size: 6vw;
+  transform: translateX(-1vw);
+  width: 40%;
+}
+a > p,
+nav {
+  font-size: 2vw;
+}
+section,
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  margin: 1vh 0;
+}
+a:visited {
+  color: #3f3f3f;
+}
+a:hover,
+.act {
+  color: red;
+}
+a:active {
+  background-color: rgb(11, 86, 177);
+}
+section {
+  width: 74%;
+  float: right;
+  height: 63vh;
+  background-color: rgb(91, 223, 39);
+}
+section p {
+  padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+  i {
+    width: 100%;
+    font-size: 7vw;
+    transform: none;
+  }
+  a > p {
+    font-size: 3vw;
+  }
+  nav a p {
+    display: block;
+}
+}

@@ -60,7 +60,11 @@ function Home() {
                   The To do list remembers all your responsibilities and you
                   will not forget any task.
                 </p>
-                <a href="/seznam_ukolu" target="_blank" rel="noreferrer">
+                <a
+                  href="../projekty/seznam_ukolu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <h3 class="button">Click here</h3>
                 </a>
               </div>
@@ -73,7 +77,11 @@ function Home() {
                   Do you need to know how much you will receive at the current
                   rate if u going to exchange money?
                 </p>
-                <a href="/kurzovni_listek" target="_blank" rel="noreferrer">
+                <a
+                  href="../projekty/kurzovni_listek"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <h3 class="button">Click here</h3>
                 </a>
               </div>
@@ -86,7 +94,11 @@ function Home() {
                   You control a grey ball which moves lands on each platform
                   until you fall through the hole.
                 </p>
-                <a href="/cesta_dolu" target="_blank" rel="noreferrer">
+                <a
+                  href="../projekty/cesta_dolu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <h3 class="button">Click here</h3>
                 </a>
               </div>

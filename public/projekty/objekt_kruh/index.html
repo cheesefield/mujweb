@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objekt kruh</title>
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <a href="/"><i class="fas fa-home"></i></a>
+      <h1>Objekt kruh</h1>
+      <h2>Bod</h2>
+      <label>x: <input type="number" min="0" id="bod_x" /></label>
+      <label>y: <input type="number" min="0" id="bod_y" /></label>
+      <h2>Střed kružnice</h2>
+      <label>x: <input type="number" min="0" id="kruh_x" /></label>
+      <label>y: <input type="number" min="0" id="kruh_y" /></label>
+      <h2>Poloměr kruhu</h2>
+      <input type="number" min="0" id="radius" />
+      <p id="obsah">Obsah kruhu je</p>
+      <p id="result">Je bod v kruhu?</p>
+      <h2>Kód</h2>
+      <pre><code>function check_a_point(a, b, x, y, r) {
+  var dist_points = (a - x) * (a - x) + (b - y) * (b - y);
+  r *= r;
+  if (dist_points < r) {
+      return true;
+  }
+  return false;
+}
+console.log(check_a_point(0, 0, 2, 4, 6));
+console.log(check_a_point(0, 0, 6, 8, 6));</code></pre>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

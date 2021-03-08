@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Tabulka</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="tabulka" />
+    <meta name="keywords" content="tabulka" />
+    <meta name="author" content="Dominik Kostka" />
+    <meta name="robots" content="all" />
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+      table {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .left {
+        text-align: left;
+      }
+      tr:nth-child(even) {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/"><i class="fas fa-home"></i></a>
+    <table border="1px" cellpadding="5px" id="table">
+      <tr bgcolor="#3040fc">
+        <th class="left" style="width: 200px" onclick="sort(0)">
+          <font color="white">Jméno</font>
+        </th>
+        <th style="width: 200px" onclick="sort(1)">
+          <font color="white">Funkce</font>
+        </th>
+        <th style="width: 300px" onclick="sort(2)">
+          <font color="white">E-mail</font>
+        </th>
+      </tr>
+      <tr>
+        <td class="left">Petr Novák</td>
+        <td>generální ředitel</td>
+        <td>novak@nase-spolecnost.cz</td>
+      </tr>
+      <tr>
+        <td class="left">Jarmila Gabrielová</td>
+        <td>provozní vedoucí</td>
+        <td>gabrielova@nase-spolecnost.cz</td>
+      </tr>
+      <tr>
+        <td class="left">Ingrid Brouzdalová</td>
+        <td>hlavní účetní</td>
+        <td>brouzdalova@nase-spolecnost.cz</td>
+      </tr>
+    </table>
+    <script src="js/script.js"></script>
+  </body>
+</html>

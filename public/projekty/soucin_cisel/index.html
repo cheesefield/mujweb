@@ -1,0 +1,62 @@
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Součin čísel</title>
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body
+    style="
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      max-width: 300px;
+    "
+  >
+    <a href="/"><i class="fas fa-home" id="white"></i></a>
+    <h1>Dominik Kostka</h1>
+    <h2>Číslo musí být kladné</h2>
+    <h3 id="h3">Konstanta je:</h3>
+    <label>Zadej číslo:</label
+    ><input
+      id="input"
+      type="number"
+      min="0"
+      step="1"
+      onfocus="this.previousValue = this.value"
+      onkeydown="this.previousValue = this.value"
+      oninput="validity.valid || (value = this.previousValue)"
+    />
+    <br />
+    <p id="p">Faktoriál je:</p>
+    <h2>
+      Faktoriál 0 je 1, takže pokud program píše jinak věřte tomuto textu.
+    </h2>
+    <script>
+      let input = document.querySelector("#input");
+      input.addEventListener("input", changevalue);
+      function changevalue() {
+        const p = document.querySelector("#p");
+        const h3 = document.querySelector("#h3");
+        var lol = input.value;
+        var sum = lol;
+        while (lol > 1) {
+          lol--;
+          sum *= lol;
+        }
+        p.textContent = `Faktoriál je: ${sum}`;
+        h3.textContent = `Konstanta je: ${input.value}`;
+      }
+    </script>
+  </body>
+</html>

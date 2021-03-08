@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  background-color: #4b4b4b;
+  color: #1b1616;
+}
+i {
+  font-size: 5vh;
+  position: absolute;
+  left: 2vh;
+  top: 2vh;
+}
+img {
+  width: 20%;
+}
+section:not(:first-of-type) {
+  float: left;
+  width: 33.333333%;
+}
+input {
+  width: 50%;
+  height: 5vh;
+  text-align: center;
+  font-size: 3vh;
+}
+h1 {
+  line-height: 10vh;
+  float: left;
+  height: 10vh;
+  width: 100%;
+}
+h2 {
+  font-size: 5vh;
+}
+section > div {
+  width: 50%;
+  float: left;
+}
+section > div,
+p,
+img {
+  font-weight: bold;
+  font-size: 4vh;
+  padding: 1vh 0;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input,
+::placeholder,
+h1,
+i {
+  color: #ffc000;
+  background-color: #252525;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pracovní list 16.2.2021</title>
+    <link rel="stylesheet" href="styyl.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <h1>
+      Pracovní list 16.2.2021
+      <a href="/"><i class="fas fa-home"></i></a>
+    </h1>
+    <main>
+      <section>
+        <h2>Příklad č. 1</h2>
+        <p>Diagram příkladu č. 2</p>
+        <img src="diagram.svg" alt="diagram.svg" />
+      </section>
+      <section>
+        <h2>Příklad č. 2</h2>
+        <p>Součet</p>
+        <input id="input2" type="number" min="0" placeholder="číslo" />
+        <div>
+          <span>Cyklus while</span>
+          <div id="while2">Výstup:</div>
+        </div>
+        <div>
+          <span>Cyklus for</span>
+          <div id="for2">Výstup:</div>
+        </div>
+        <script>
+          var el = document.getElementById("input2");
+          var quote = "that is not a natural number";
+          el.addEventListener("input", () => {
+            var numero = parseInt(el.value);
+            if (!numero) {
+              if (numero == 0) addit(0);
+              else addit("");
+            } else if (numero < 0 || el.value % 1 !== 0) {
+              addit(quote);
+            } else {
+              foor(numero);
+              whiile(numero);
+            }
+          });
+          function addit(x) {
+            let ids = document.querySelectorAll("#for2, #while2");
+            for (var i = 0; i < ids.length; i++) {
+              ids[i].innerHTML = "Output: " + x;
+            }
+          }
+          function foor(n) {
+            let soucet = 0;
+            for (var i = 1; i < n + 1; i++) {
+              soucet += i;
+            }
+            document.getElementById("for2").innerHTML = "Output: " + soucet;
+          }
+          function whiile(n) {
+            let soucet = 0;
+            while (n > 0) {
+              soucet += n;
+              n--;
+            }
+            document.getElementById("while2").innerHTML = "Output: " + soucet;
+          }
+        </script>
+      </section>
+      <section>
+        <h2>Příklad č. 3</h2>
+        <p>Faktoriál</p>
+        <input id="input3" type="number" min="0" placeholder="číslo" />
+        <div>
+          <span>Cyklus while</span>
+          <div id="while3">Výstup:</div>
+        </div>
+        <div>
+          <span>Cyklus for</span>
+          <div id="for3">Výstup:</div>
+        </div>
+        <script>
+          var inp = document.getElementById("input3");
+          var quote = "that is not a natural number";
+          inp.addEventListener("input", () => {
+            factwhile(parseInt(inp.value));
+            factfor(parseInt(inp.value));
+          });
+          function factwhile(n) {
+            let answ = n;
+            if (n == 0 || n == 1) answ = 1;
+            else if (!n) answ = "";
+            else if (n < 0 || inp.value % 1 !== 0) answ = quote;
+            else
+              while (n > 1) {
+                n--;
+                answ *= n;
+              }
+            document.getElementById("while3").innerHTML = "Output: " + answ;
+          }
+          function factfor(n) {
+            if (n == 0 || n == 1) n = 1;
+            else if (!n) n = "";
+            else if (n < 0 || inp.value % 1 !== 0) n = quote;
+            else
+              for (let i = n - 1; i >= 1; i--) {
+                n *= i;
+              }
+            document.getElementById("for3").innerHTML = "Output: " + n;
+          }
+        </script>
+      </section>
+      <section>
+        <h2>Příklad č. 4</h2>
+        <p>Odmocnění</p>
+        <input id="input4" type="number" min="0" placeholder="číslo" />
+        <div>
+          <span>Cyklus while</span>
+          <div id="while4">Výstup:</div>
+        </div>
+        <div>
+          <span>Cyklus for</span>
+          <div id="for4">Výstup:</div>
+        </div>
+        <script>
+          var input = document.getElementById("input4");
+          input.addEventListener("input", () => {
+            sqwhile(parseInt(input.value));
+            sqfor(parseInt(input.value));
+          });
+          function sqwhile(n) {
+            let i = 1,
+              answer = n;
+            if (!n) {
+              if (n == 0) answer = 0;
+              else answer = "";
+            } else {
+              while (i * i <= n) {
+                answer = i;
+                i++;
+              }
+            }
+            document.getElementById("while4").innerHTML = "Output: " + answer;
+          }
+          function sqfor(n) {
+            let answer = n,
+              i;
+            if (!n) {
+              if (n == 0) answer = 0;
+              else answer = "";
+            } else {
+              for (i = 0; i * i <= n; i++) {
+                answer = i;
+              }
+            }
+
+            document.getElementById("for4").innerHTML = "Output: " + answer;
+          }
+        </script>
+      </section>
+    </main>
+  </body>
+</html>

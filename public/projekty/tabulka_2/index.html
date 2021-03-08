@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Tabulka 2</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="tabulka" />
+    <meta name="keywords" content="tabulka" />
+    <meta name="author" content="Dominik Kostka" />
+    <meta name="robots" content="all" />
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      table,
+      tr,
+      th {
+        text-align: center;
+      }
+      table {
+        border: solid 5px blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .right {
+        text-align: right;
+      }
+      caption {
+        color: white;
+        background-color: blue;
+        padding-top: 5px;
+        font-size: large;
+      }
+      img {
+        position: absolute;
+        left: 20px;
+      }
+      tr:nth-child(odd) {
+        background-color: #bbb;
+      }
+      tr:nth-child(even) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/"><i class="fas fa-home"></i></a>
+    <table cellspacing="10px" cellpadding="5px">
+      <caption>
+        Populace v ČR
+      </caption>
+      <tr>
+        <th width="30px">No</th>
+        <th width="85px">Město</th>
+        <th width="180px">Kraj</th>
+        <th width="120px">Obyvatelé</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Opava</td>
+        <td>Moravskoslezský</td>
+        <td class="right">58 709</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Olomouc</td>
+        <td>Olomoucký</td>
+        <td class="right">100 043</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Most</td>
+        <td>Ústecký</td>
+        <td class="right">66 797</td>
+      </tr>
+    </table>
+  </body>
+</html>

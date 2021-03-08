@@ -29,7 +29,7 @@ function Domů() {
       </Helmet>
       <main>
         <section id="home-page">
-          <h1>Tohle je TEST</h1>
+          <h1>Ahoj, jsem Dominik</h1>
           <h2>Vítej na mé stránce</h2>
           <h3>Vytvářím webové stránky pomocí HTML, CSS a Javascriptu.</h3>
           <div id="images">
@@ -41,7 +41,7 @@ function Domů() {
                   Seznam úkolů si zapamatuje všechny vaše povinnosti a vy už tak
                   nezapomenete na žádný úkol.
                 </p>
-                <a href="seznam_ukolu" target="_blank">
+                <a href="projekty/seznam_ukolu" target="_blank">
                   <h3 className="button">Klikni zde</h3>
                 </a>
               </div>
@@ -54,7 +54,7 @@ function Domů() {
                   Potřebujete vyměnit peníze a chcete předem přesně vědět, kolik
                   při aktuálním kurzu dostanete?
                 </p>
-                <a href="kurzovni_listek" target="_blank">
+                <a href="projekty/kurzovni_listek" target="_blank">
                   <h3 className="button">Klikni zde</h3>
                 </a>
               </div>
@@ -67,7 +67,7 @@ function Domů() {
                   Ovládáte šedou kouli, která se pohybuje na každé platformě,
                   dokud nespadnete skrz díru.
                 </p>
-                <a href="cesta_dolu" target="_blank">
+                <a href="projekty/cesta_dolu" target="_blank">
                   <h3 className="button">Klikni zde</h3>
                 </a>
               </div>
