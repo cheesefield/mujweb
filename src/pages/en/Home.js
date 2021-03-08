@@ -61,7 +61,7 @@ function Home() {
                   will not forget any task.
                 </p>
                 <a
-                  href="../projekty/seznam_ukolu"
+                  href="../projects/seznam_ukolu"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -78,7 +78,7 @@ function Home() {
                   rate if u going to exchange money?
                 </p>
                 <a
-                  href="../projekty/kurzovni_listek"
+                  href="../projects/kurzovni_listek"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -95,7 +95,7 @@ function Home() {
                   until you fall through the hole.
                 </p>
                 <a
-                  href="../projekty/cesta_dolu"
+                  href="../projects/cesta_dolu"
                   target="_blank"
                   rel="noreferrer"
                 >
