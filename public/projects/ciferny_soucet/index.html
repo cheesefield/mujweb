@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciferný součet</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <main>
+      <a href="/"><i class="fas fa-home"></i></a>
+      <h1>Ciferný součet</h1>
+      <img src="diagram.png" alt="" />
+      <h2>Javascript</h2>
+      <pre><code>function changeValueWhile(number) {
+  let sum = 0;
+  while (number != 0) {
+    sum = sum + (number % 10);
+    number = parseInt(number / 10);
+  }
+  return sum;
+}
+console.log(changeValueWhile(85));</code></pre>
+      <pre><code>function changeValueFor(integer) {
+  let sum = 0;
+  let digits = Math.floor(integer).toString();
+  for (let i = 0; i < digits.length; i++) {
+    sum += Number(digits[i]);
+  }
+  return sum;
+}
+console.log(changeValueFor(85));</code></pre>
+      <h3>Podle while:</h3>
+      <label>Zadej číslo: </label
+      ><input
+        id="input_while"
+        type="number"
+        min="0"
+        max="1000000000000000"
+        step="1"
+        onfocus="this.previousValue = this.value"
+        onkeydown="this.previousValue = this.value"
+        oninput="validity.valid || (value = this.previousValue)"
+      />
+      <p id="p_while">Výsledek:</p>
+      <h3>Podle for:</h3>
+      <label>Zadej číslo: </label
+      ><input
+        id="input_for"
+        type="number"
+        min="0"
+        max="1000000000000000"
+        step="1"
+        onfocus="this.previousValue = this.value"
+        onkeydown="this.previousValue = this.value"
+        oninput="validity.valid || (value = this.previousValue)"
+      />
+      <p id="p_for">Výsledek:</p>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

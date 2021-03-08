@@ -1,0 +1,99 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+}
+nav {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+  background-color: #000;
+  font-family: Optima, sans-serif;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+  padding: 0;
+}
+nav ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+  padding: 20px;
+}
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+nav ul li.active a,
+nav ul li a:hover {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(147, 230, 241, 1) 0%,
+    rgba(145, 192, 241, 1) 45.5%
+  );
+  color: #000;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 74px;
+}
+#hardware {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(121, 203, 202, 1) 11.2%,
+    rgba(119, 161, 211, 1) 91.1%
+  );
+}
+#monitor {
+  background-image: linear-gradient(
+    110.6deg,
+    rgba(179, 157, 219, 1) 7%,
+    rgba(150, 159, 222, 1) 47.7%,
+    rgba(24, 255, 255, 1) 100.6%
+  );
+}
+#klavesnice {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(153, 103, 186, 1) 41.2%,
+    rgba(0, 113, 227, 1) 90%
+  );
+}
+h1,
+h2,
+p {
+  padding: 0 20px;
+}
+img {
+  width: 100%;
+  display: block;
+}
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 80%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  font-family: Optima, sans-serif;
+}

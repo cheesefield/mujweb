@@ -1,0 +1,60 @@
+body {
+  background-color: #aaa;
+  text-align: center;
+  overflow: hidden;
+}
+canvas {
+  border: 10px solid #777;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: "Avenir Next", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+}
+h1 strong {
+  font-size: 1, 35em;
+  display: inline-block;
+}
+h2 {
+  margin-top: 0;
+  font-family: "Avenir Next", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1, 5em;
+}
+.welcome {
+  background-color: #aaa;
+  border: 5px solid black;
+  height: 160px;
+  width: 220px;
+  position: fixed;
+  left: 50%;
+  margin-left: -115px; /* half of welcome width plus border */
+  top: 195px; /* random number bcs im to lazy to calcute this */
+}
+button {
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+button:hover {
+  background-color: #aaa;
+}
+h4 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+p {
+  padding: 0;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+img {
+  position: fixed;
+  left: 10px;
+}

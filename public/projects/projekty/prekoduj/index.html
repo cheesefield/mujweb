@@ -1,0 +1,41 @@
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Překóduj</title>
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <h1>Pracovní list 9. 11. 2020</h1>
+    <h3>Dominik Kostka</h3>
+    <form>
+      <label for="idtext">Text pro překlad:</label><br />
+      <input type="text" id="idtext" size="50" value="better late than never" />
+    </form>
+    <p>
+      <button type="button" onclick="pigLatin()">Přelož do PigLatin</button>
+    </p>
+    <p id="piglatin">Zde se objeví překlad.</p>
+    <script>
+      function pigLatin() {
+        let fraze = document.getElementById("idtext").value;
+        document.getElementById("piglatin").innerHTML = fraze;
+
+        let slova = fraze.split(" ");
+
+        var prelozena = slova.map(function (slovo) {
+          let prvni, zbytek;
+          prvni = slovo.substring(0, 1);
+          zbytek = slovo.substring(1);
+          return zbytek + prvni + "ay";
+        });
+        prelozena = prelozena.join(" ");
+        document.getElementById("piglatin").innerHTML = prelozena;
+      }
+    </script>
+  </body>
+</html>

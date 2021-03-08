@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seznam úkolů</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <a href="/"><i class="fas fa-home"></i></a>
+    <div id="myDIV" class="header">
+      <h2>Můj seznam úkolů</h2>
+      <div>
+        <input type="text" id="myInput" placeholder="Zde napiš úkol..." />
+        <span onclick="newElement()" class="addBtn">Přidat</span>
+      </div>
+    </div>
+    <ul id="myUL"></ul>
+    <script src="js/script.js"></script>
+  </body>
+</html>

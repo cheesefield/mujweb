@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cesta dolů</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link
+      href="../../favicon/favicon.ico"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="board" id="welcome-board">
+      <h4>Cesta dolů</h4>
+      <p>Použij <strong>šipky</strong> na své klávesnici pro hraní hry.</p>
+      <button onclick="removeClass()">Start</button>
+    </div>
+    <div class="board" id="death-board">
+      <h4>Cesta dolů</h4>
+      <p><strong>Zemřel/a</strong> jsi :(.</p>
+      <button onclick="location.reload()">Hrát znovu</button>
+    </div>
+    <h1>Cesta dolů</h1>
+    <a href="/"><i class="fas fa-home" id="white"></i></a>
+    <div id="game">
+      <div id="score">Skóre: 0</div>
+      <div id="highscore"></div>
+      <div id="left"></div>
+      <div id="right"></div>
+      <div id="character">4</div>
+    </div>
+  </body>
+  <script src="js/controls.js"></script>
+  <script src="js/cdscript.js"></script>
+</html>

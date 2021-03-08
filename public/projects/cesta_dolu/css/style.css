@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+:root {
+  --width: 400px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #03045e;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+.board {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
+  background-color: #caf0f8;
+  border: 5px solid #03045e;
+  height: 160px;
+  width: 220px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000000000;
+  transition: opacity 0.4s;
+}
+.board.active {
+  opacity: 1;
+  pointer-events: all;
+}
+button {
+  border: 5px solid #03045e;
+  border-radius: 5px;
+  padding: 3px 8px;
+  background-color: #ade8f4;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: #caf0f8;
+}
+h4 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+p {
+  padding: 0;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  margin: 20px 0 50px;
+  font-family: "Oswald", sans-serif;
+  color: #00b4d8;
+}
+#score,
+#highscore {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  margin-top: -30px;
+  padding: 0 10px;
+  padding-top: 0;
+  color: #fff;
+  width: 380px;
+}
+#highscore {
+  text-align: right;
+}
+#game {
+  width: var(--width);
+  height: 500px;
+  border: 5px solid black;
+  margin: auto;
+  overflow: hidden;
+  background-color: #48cae4;
+}
+#character {
+  width: 20px;
+  height: 20px;
+  background-color: #444;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  position: relative;
+  top: 380px;
+  left: 190px;
+  z-index: 1000000;
+}
+
+.block {
+  width: var(--width);
+  height: 20px;
+  background-color: black;
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+}
+.hole {
+  width: 40px;
+  height: 20px;
+  background-color: #48cae4;
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+  z-index: 1;
+}
+#left,
+#right {
+  width: 50%;
+  position: absolute;
+  height: 500px;
+}
+#right {
+  left: 50%;
+}
