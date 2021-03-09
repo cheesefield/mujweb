@@ -65,7 +65,12 @@ function App() {
             <Route exact path="/en/about" component={About} />
             <Route exact path="/en/projects" component={Projects} />
             <Route exact path="/en/contact" component={Contact} />
-            <Route path="*" component={ErrorPage} />
+            <Route
+              path="*"
+              component={ErrorPage}
+              setLanguage={setLanguage}
+              language={language}
+            />
           </Switch>
           <Footer language={language} />
         </Router>

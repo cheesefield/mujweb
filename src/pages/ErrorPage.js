@@ -2,7 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 
-function ErrorPage() {
+function ErrorPage(props) {
+  const changeLanguage = () => props.setLanguage(!props.language);
   return (
     <div>
       <Helmet>
@@ -69,6 +70,7 @@ function ErrorPage() {
                 fontSize: "20px",
                 marginBottom: "20px",
               }}
+              onClick={changeLanguage}
             >
               HOME
             </h3>
