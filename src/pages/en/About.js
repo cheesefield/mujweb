@@ -53,19 +53,18 @@ function About() {
         />
         <meta property="twitter:image" content="../images/share.png" />
       </Helmet>
-      <main>
-        <section
-          style={{
-            position: "absolute",
-            top: "42%",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            fontSize: "5vw",
-          }}
-        >
-          <p>PREPARING...</p>
-        </section>
-      </main>
+      <section
+        style={{
+          position: "absolute",
+          top: "40%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          fontSize: "20px",
+          margin: "0",
+        }}
+      >
+        <p>PREPARING...</p>
+      </section>
     </div>
   );
 }

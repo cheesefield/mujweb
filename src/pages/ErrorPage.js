@@ -34,28 +34,38 @@ function ErrorPage() {
         />
         <meta property="twitter:image" content="images/share.png" />
       </Helmet>
-      <main>
+      <main className="error_page">
         <section
           style={{
             position: "absolute",
-            top: "42%",
+            top: "38%",
             padding: "20px",
             paddingBottom: "0",
-            left: "50%",
+            left: "46%",
             transform: "translate(-50%,-50%)",
-            fontSize: "1.8vw",
+            display: "flex",
+            flexDirection: "column",
+            width: "40%",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
           }}
         >
-          <p>Tady jsi špatně kámo, couvej zpět</p>
+          <p
+            style={{
+              fontSize: "20px",
+            }}
+          >
+            Tady jsi špatně kámo, couvej zpět
+          </p>
           <NavLink to="/">
             <h3
               style={{
                 textAlign: "center",
                 padding: "10px",
-                margin: "0",
                 color: "#333",
                 backgroundColor: "#aaa",
-                fontSize: "1.8vw",
+                fontSize: "20px",
               }}
             >
               DOMŮ

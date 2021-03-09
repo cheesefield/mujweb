@@ -658,6 +658,17 @@ nav.sticky .menu-btn__burger {
     font-size: 3.5vw;
   }
 }
+@media screen and (max-width: 584px) {
+  .error_page section {
+    width: 85%;
+  }
+  .error_page section p {
+    font-size: 20px;
+  }
+  .error_page section h3 {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 279px) {
   body {
     padding-bottom: 203px;

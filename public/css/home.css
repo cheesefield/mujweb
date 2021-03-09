@@ -3,11 +3,11 @@ i {
   top: 25px;
   left: 25px;
   font-size: 35px;
-  color: #333;
+  color: #252525;
   transition: 0.6s;
 }
 i:hover {
-  color: #252525;
+  color: #333;
 }
 i#white {
   color: #efefed;
