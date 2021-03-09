@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Shippori Mincho B1", serif;
+}
+body {
+  background-color: #aaa;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin: 20px 20px 0;
+  font-size: 35px;
+}
+ul {
+  width: fit-content;
+  padding: 15px 25px;
+  margin: 0 auto;
+  list-style: circle;
+}
+h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+}
+.ingredience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ingredience h3 {
+  font-size: 30px;
+}
+li {
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+main .recept {
+  background-color: #333;
+  color: #efefed;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 20px;
+  margin: 20px;
+}
+main .recept .postup {
+  display: grid;
+}
+main .recept .postup .number {
+  font-size: 20px;
+  font-weight: bolder;
+  border-bottom: solid 2px;
+  margin: 5px 0;
+  width: fit-content;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #333;
+  }
+  h1 {
+    color: #efefed;
+    margin-top: 70px;
+  }
+  main {
+    width: 100%;
+  }
+  main .recept {
+    display: block;
+    margin: 0;
+  }
+  main .recept .postup {
+    display: block;
+  }
+  .fas {
+    color: #efefed;
+    transition: 0.6s;
+  }
+  .fas:hover {
+    color: #aaa;
+  }
+}

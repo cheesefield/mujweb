@@ -131,6 +131,11 @@ function Projects() {
                   Two-column layout
                 </a>
               </li>
+              <li>
+                <a href="../projects/recepty" title="Recipes" target="_blank">
+                  Recipes
+                </a>
+              </li>
             </ul>
           </section>
         </div>

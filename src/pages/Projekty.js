@@ -108,6 +108,11 @@ function Projekty() {
                   Dvousloupcový layout
                 </a>
               </li>
+              <li>
+                <a href="projekty/recepty" title="Recepty" target="_blank">
+                  Recepty
+                </a>
+              </li>
             </ul>
           </section>
         </div>
