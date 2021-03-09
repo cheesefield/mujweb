@@ -45,7 +45,7 @@ function ErrorPage() {
             transform: "translate(-50%,-50%)",
             display: "flex",
             flexDirection: "column",
-            width: "40%",
+            width: "fit-content",
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
