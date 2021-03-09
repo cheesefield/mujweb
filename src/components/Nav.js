@@ -57,8 +57,7 @@ function Nav(props) {
     window.location.pathname === "/" ||
     window.location.pathname === "/o_mne" ||
     window.location.pathname === "/projekty" ||
-    window.location.pathname === "/kontakt" ||
-    !props.language
+    window.location.pathname === "/kontakt"
   ) {
     return (
       <div>
