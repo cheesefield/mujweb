@@ -70,7 +70,7 @@ function ErrorPage() {
                 marginBottom: "20px",
               }}
             >
-              DOMŮ
+              HOME
             </h3>
           </NavLink>
         </section>
