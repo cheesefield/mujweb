@@ -7,25 +7,32 @@ function ErrorPage() {
     <div>
       <Helmet>
         <title>Error 404(Page Not Found)</title>
+        <meta name="title" content="CheeseField" />
         <meta
           name="description"
           content="Vypadá to, že jsi se ztratil, ale pokud tohle čteš, tak veřím, že najdeš cestu ven."
         />
-        <meta property="og:url" content="http://www.cheesefield.4fan.cz/" />
+        <meta
+          property="og:url"
+          content="https://cheesefield-kostich02.vercel.app/*"
+        />
         <meta property="og:title" content="Error 404(Page Not Found)" />
         <meta
           property="og:description"
           content="Vypadá to, že jsi se ztratil, ale pokud tohle čteš, tak veřím, že najdeš cestu ven."
         />
         <meta property="og:image" content="images/share.png" />
-        <meta name="og:locale" content="cs_CZ" />
-        <meta name="og:type" content="website" />
-        <meta name="twitter:title" content="Error 404(Page Not Found)" />
+
         <meta
-          name="twitter:description"
+          property="twitter:url"
+          content="https://cheesefield-kostich02.vercel.app/*"
+        />
+        <meta property="twitter:title" content="Error 404(Page Not Found)" />
+        <meta
+          property="twitter:description"
           content="Vypadá to, že jsi se ztratil, ale pokud tohle čteš, tak veřím, že najdeš cestu ven."
         />
-        <meta name="twitter:image" content="images/share.png" />
+        <meta property="twitter:image" content="images/share.png" />
       </Helmet>
       <main>
         <section

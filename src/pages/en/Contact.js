@@ -25,25 +25,32 @@ function Contact() {
         <link rel="manifest" href="../favicon/manifest.json" />
         <link rel="shortcut icon" href="../favicon/logo.ico" />
         <title>Contact • CheeseField</title>
+        <meta name="title" content="Contact • CheeseField" />
         <meta
           name="description"
-          content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
+          content="I'm Dominik, I create websites with HTML, CSS and Javascript, sometimes I make games in Javascript."
         />
-        <meta property="og:url" content="http://www.cheesefield.4fan.cz/" />
+        <meta
+          property="og:url"
+          content="https://cheesefield-kostich02.vercel.app/en/contact"
+        />
         <meta property="og:title" content="Contact • CheeseField" />
         <meta
           property="og:description"
-          content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
+          content="I'm Dominik, I create websites with HTML, CSS and Javascript, sometimes I make games in Javascript."
         />
         <meta property="og:image" content="../images/share.png" />
-        <meta name="og:locale" content="cs_CZ" />
-        <meta name="og:type" content="website" />
-        <meta name="twitter:title" content="Contact • CheeseField" />
+
         <meta
-          name="twitter:description"
-          content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
+          property="twitter:url"
+          content="https://cheesefield-kostich02.vercel.app/en/contact"
         />
-        <meta name="twitter:image" content="../images/share.png" />
+        <meta property="twitter:title" content="Contact • CheeseField" />
+        <meta
+          property="twitter:description"
+          content="I'm Dominik, I create websites with HTML, CSS and Javascript, sometimes I make games in Javascript."
+        />
+        <meta property="twitter:image" content="../images/share.png" />
       </Helmet>
       <main style={{ width: "80vw" }}>
         <form

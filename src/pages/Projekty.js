@@ -6,25 +6,32 @@ function Projekty() {
     <div>
       <Helmet>
         <title>Projekty • CheeseField</title>
+        <meta name="title" content="Projekty • CheeseField" />
         <meta
           name="description"
           content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
         />
-        <meta property="og:url" content="http://www.cheesefield.4fan.cz/" />
+        <meta
+          property="og:url"
+          content="https://cheesefield-kostich02.vercel.app/projekty"
+        />
         <meta property="og:title" content="Projekty • CheeseField" />
         <meta
           property="og:description"
           content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
         />
         <meta property="og:image" content="images/share.png" />
-        <meta name="og:locale" content="cs_CZ" />
-        <meta name="og:type" content="website" />
-        <meta name="twitter:title" content="Projekty • CheeseField" />
+
         <meta
-          name="twitter:description"
+          property="twitter:url"
+          content="https://cheesefield-kostich02.vercel.app/projekty"
+        />
+        <meta property="twitter:title" content="Projekty • CheeseField" />
+        <meta
+          property="twitter:description"
           content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
         />
-        <meta name="twitter:image" content="images/share.png" />
+        <meta property="twitter:image" content="images/share.png" />
       </Helmet>
       <main>
         <div id="row200">
