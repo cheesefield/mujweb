@@ -54,9 +54,10 @@ function ErrorPage() {
           <p
             style={{
               fontSize: "20px",
+              marginBottom: "10px",
             }}
           >
-            Tady jsi špatně kámo, couvej zpět
+            This page doesn´t exist, go back
           </p>
           <NavLink to="/">
             <h3
@@ -66,6 +67,7 @@ function ErrorPage() {
                 color: "#333",
                 backgroundColor: "#aaa",
                 fontSize: "20px",
+                marginBottom: "20px",
               }}
             >
               DOMŮ

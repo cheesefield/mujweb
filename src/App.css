@@ -660,13 +660,13 @@ nav.sticky .menu-btn__burger {
 }
 @media screen and (max-width: 584px) {
   .error_page section {
-    width: 85%;
+    width: 85% !important;
   }
   .error_page section p {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .error_page section h3 {
-    font-size: 17px;
+    font-size: 17px !important;
   }
 }
 @media screen and (max-width: 279px) {
