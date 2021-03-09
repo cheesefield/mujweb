@@ -26,3 +26,10 @@ h3 a {
 h3 a:hover {
   color: #444;
 }
+div.recepty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: -71px;
+}
