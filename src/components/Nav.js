@@ -140,14 +140,95 @@ function Nav(props) {
         </nav>
       </div>
     );
-  }
-  if (
+  } else if (
     window.location.pathname === "/en" ||
     window.location.pathname === "/en/about" ||
     window.location.pathname === "/en/projects" ||
     window.location.pathname === "/en/contact" ||
     props.language
   ) {
+    return (
+      <div>
+        <nav className={navbar ? "sticky" : ""}>
+          <NavLink to="/en" onClick={closeMobileMenu}>
+            <img src="../images/logo.png" alt="logo" />
+          </NavLink>
+          <ul className={click ? "navbar active" : "navbar"}>
+            <li className="nav">
+              <NavLink
+                exact
+                to="/en"
+                activeClassName="nav-active"
+                onClick={closeMobileMenu}
+              >
+                <div className="nav-icons">
+                  <FaHome />
+                </div>
+                Home
+              </NavLink>
+            </li>
+            <li className="nav">
+              <NavLink
+                exact
+                to="/en/about"
+                activeClassName="nav-active"
+                onClick={closeMobileMenu}
+              >
+                <div className="nav-icons">
+                  <FaUser />
+                </div>
+                About
+              </NavLink>
+            </li>
+            <li className="nav">
+              <NavLink
+                exact
+                to="/en/projects"
+                activeClassName="nav-active"
+                onClick={closeMobileMenu}
+              >
+                <div className="nav-icons">
+                  <FaFile />
+                </div>
+                Projects
+              </NavLink>
+            </li>
+            <li className="nav">
+              <NavLink
+                exact
+                to="/en/contact"
+                activeClassName="nav-active"
+                onClick={closeMobileMenu}
+              >
+                <div className="nav-icons">
+                  <FaPhoneAlt />
+                </div>
+                Contact
+              </NavLink>
+            </li>
+            <span className="language">
+              <NavLink to="/" onClick={changeLangAndCloseMenu}>
+                cz
+              </NavLink>
+            </span>
+          </ul>
+          <div
+            onClick={handleClick}
+            className={click ? "menu-btn open" : "menu-btn"}
+          >
+            <div className="menu-btn__burger"></div>
+          </div>
+          <div className="progress-container">
+            <div
+              className="progress-bar"
+              id="myBar"
+              style={{ width: `${scrollTop}%` }}
+            ></div>
+          </div>
+        </nav>
+      </div>
+    );
+  } else {
     return (
       <div>
         <nav className={navbar ? "sticky" : ""}>
