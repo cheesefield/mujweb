@@ -59,7 +59,7 @@ function About() {
           top: "40%",
           left: "50%",
           transform: "translate(-50%,-50%)",
-          fontSize: "20px",
+          fontSize: "30px",
           margin: "0",
         }}
       >
