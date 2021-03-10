@@ -39,10 +39,10 @@ function ErrorPage(props) {
         <section
           style={{
             position: "absolute",
-            top: "38%",
+            top: "40%",
             padding: "20px",
             paddingBottom: "0",
-            left: "46%",
+            left: "50%",
             transform: "translate(-50%,-50%)",
             display: "flex",
             flexDirection: "column",
