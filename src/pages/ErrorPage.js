@@ -50,6 +50,7 @@ function ErrorPage(props) {
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
+            margin: "0",
           }}
         >
           <p
