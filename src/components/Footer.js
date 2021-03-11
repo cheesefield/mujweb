@@ -3,9 +3,9 @@ import {
   FaTwitter,
   FaInstagram,
   FaPaypal,
+  FaSnapchatGhost,
   FaGithub,
 } from "react-icons/fa";
-import { SiTiktok } from "react-icons/si";
 import { a } from "react-router-dom";
 
 function Footer(props) {
@@ -124,7 +124,7 @@ function Footer(props) {
             rel="noreferrer"
           >
             <div class="icons">
-              <SiTiktok />
+              <FaGithub />
             </div>
           </a>
           <p class="vodoznak">
