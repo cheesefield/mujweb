@@ -26,6 +26,9 @@
     "eject": "react-scripts eject",
     "postbuild": "react-snap"
   },
+  "reactSnap": {
+    "fixWebpackChunksIssue": false
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
