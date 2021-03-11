@@ -3,7 +3,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaPaypal,
-  FaSnapchatGhost,
+  FaGithub,
 } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { a } from "react-router-dom";
@@ -56,12 +56,12 @@ function Footer(props) {
             </div>
           </a>
           <a
-            href="https://vm.tikhrefk.com/ZSpVC8YA"
+            href="https://github.com/dominikkostka"
             target="_blank"
             rel="noreferrer"
           >
             <div class="icons">
-              <SiTiktok />
+              <FaGithub />
             </div>
           </a>
           <p class="vodoznak">
