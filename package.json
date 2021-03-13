@@ -55,7 +55,6 @@
     "inlineCss": true,
     "headless": true,
     "include": [
-      "/*",
       "/",
       "/o_mne",
       "/projekty",
