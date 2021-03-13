@@ -20,7 +20,10 @@ function Kontakt() {
           property="og:description"
           content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
         />
-        <meta property="og:image" content="images/share.png" />
+        <meta
+          property="og:image"
+          content="https://cheesefield.vercel.app/images/share.png"
+        />
 
         <meta
           property="twitter:url"
@@ -31,7 +34,10 @@ function Kontakt() {
           property="twitter:description"
           content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
         />
-        <meta property="twitter:image" content="images/share.png" />
+        <meta
+          property="twitter:image"
+          content="https://cheesefield.vercel.app/images/share.png"
+        />
       </Helmet>
       <main style={{ width: "80vw" }}>
         <form

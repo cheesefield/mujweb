@@ -40,7 +40,10 @@ function About() {
           property="og:description"
           content="I'm Dominik, I create websites with HTML, CSS and Javascript, sometimes I make games in Javascript."
         />
-        <meta property="og:image" content="../images/share.png" />
+        <meta
+          property="og:image"
+          content="https://cheesefield.vercel.app/images/share.png"
+        />
 
         <meta
           property="twitter:url"
@@ -51,7 +54,10 @@ function About() {
           property="twitter:description"
           content="I'm Dominik, I create websites with HTML, CSS and Javascript, sometimes I make games in Javascript."
         />
-        <meta property="twitter:image" content="../images/share.png" />
+        <meta
+          property="twitter:image"
+          content="https://cheesefield.vercel.app/images/share.png"
+        />
       </Helmet>
       <section
         style={{

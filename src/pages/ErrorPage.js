@@ -22,7 +22,10 @@ function ErrorPage(props) {
           property="og:description"
           content="Vypadá to, že jsi se ztratil, ale pokud tohle čteš, tak veřím, že najdeš cestu ven."
         />
-        <meta property="og:image" content="images/share.png" />
+        <meta
+          property="og:image"
+          content="https://cheesefield.vercel.app/images/share.png"
+        />
 
         <meta
           property="twitter:url"
@@ -33,7 +36,10 @@ function ErrorPage(props) {
           property="twitter:description"
           content="Vypadá to, že jsi se ztratil, ale pokud tohle čteš, tak veřím, že najdeš cestu ven."
         />
-        <meta property="twitter:image" content="images/share.png" />
+        <meta
+          property="twitter:image"
+          content="https://cheesefield.vercel.app/images/share.png"
+        />
       </Helmet>
       <main className="error_page">
         <section
