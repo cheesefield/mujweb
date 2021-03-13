@@ -45,6 +45,11 @@
     ]
   },
   "reactSnap": {
-    "puppeteerExecutablePath": "/usr/bin/google-chrome-unstable"
+    "puppeteerExecutablePath": "/usr/bin/chromium-browser",
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-gpu"
+    ]
   }
 }
