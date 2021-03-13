@@ -37,7 +37,7 @@ function Domů() {
         />
         <meta
           property="twitter:image"
-          content="/https://cheesefield.vercel.app/images/share.png"
+          content="https://cheesefield.vercel.app/images/share.png"
         />
       </Helmet>
       <main>
