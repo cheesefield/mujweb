@@ -21,7 +21,7 @@ function Domů() {
           property="og:description"
           content="Jmenuji se Dominik, vytvářím webové stránky v HTML a CSS, občas udělám i hru v Javascriptu."
         />
-        <meta property="og:image" content="/images/share.png" />
+        <meta property="og:image" content="images/share.png" />
 
         <meta
           property="twitter:url"
