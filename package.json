@@ -55,7 +55,15 @@
     "inlineCss": true,
     "headless": true,
     "include": [
-      "/", "/dir/"
+      "/*",
+      "/",
+      "/o_mne",
+      "/projekty",
+      "/kontakt",
+      "/en",
+      "/en/about",
+      "/en/projects",
+      "/en/contact"
     ]
   }
 }
