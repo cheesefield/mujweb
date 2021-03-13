@@ -47,6 +47,12 @@
   },
   "reactSnap": {
     "executablePath": "puppeteer/.local-chromium/win64-686378/chrome-win",
-    "inlineCss": true
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-gpu"
+    ],
+    "inlineCss": true,
+    "headless": true
   }
 }
