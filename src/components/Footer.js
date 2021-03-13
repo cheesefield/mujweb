@@ -119,7 +119,7 @@ function Footer(props) {
             </div>
           </a>
           <a
-            href="https://vm.tikhrefk.com/ZSpVC8YA"
+            href="https://github.com/dominikkostka"
             target="_blank"
             rel="noreferrer"
           >
