@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import FadeLoader from "react-spinners/FadeLoader";
@@ -27,56 +27,61 @@ const override = css`
   transform: translate(-15%, -25%);
 `;
 
-function App() {
-  const [loading, setLoading] = useState(false);
-  const [language, setLanguage] = useState(false);
+class App extends Component {
+  render() {
+    const [loading, setLoading] = useState(false);
+    const [language, setLanguage] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-  }, []);
+    useEffect(() => {
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1500);
+    }, []);
 
-  return (
-    <div className="App">
-      {loading ? (
-        <FadeLoader
-          color={"#333"}
-          loading={loading}
-          css={override}
-          height={25}
-          width={7}
-          radius={5}
-          margin={6}
-        />
-      ) : (
-        <Router>
-          <ScrollToTop />
-          <Nav setLanguage={setLanguage} language={language} />
-          <Switch>
-            <Route exact path="/" component={Domů} />
-            <Route exact path="/domu" component={Domů} />
-            <Route exact path="/o_mne" component={O_mne} />
-            <Route exact path="/projekty" component={Projekty} />
-            <Route exact path="/kontakt" component={Kontakt} />
-            <Route exact path="/en" component={Home} />
-            <Route exact path="/en/home" component={Home} />
-            <Route exact path="/en/about" component={About} />
-            <Route exact path="/en/projects" component={Projects} />
-            <Route exact path="/en/contact" component={Contact} />
-            <Route
-              path="*"
-              component={ErrorPage}
-              setLanguage={setLanguage}
-              language={language}
-            />
-          </Switch>
-          <Footer language={language} />
-        </Router>
-      )}
-    </div>
-  );
+    return (
+      <div className="App">
+        {loading ? (
+          <FadeLoader
+            color={"#333"}
+            loading={loading}
+            css={override}
+            height={25}
+            width={7}
+            radius={5}
+            margin={6}
+          />
+        ) : (
+          <Router>
+            <ScrollToTop />
+            <Nav setLanguage={setLanguage} language={language} />
+            <Switch>
+              <Route exact path="/" component={Domů} />
+              <Route exact path="/domu" component={Domů} />
+              <Route exact path="/o_mne" component={O_mne} />
+              <Route exact path="/projekty" component={Projekty} />
+              <Route exact path="/kontakt" component={Kontakt} />
+              <Route exact path="/en" component={Home} />
+              <Route exact path="/en/home" component={Home} />
+              <Route exact path="/en/about" component={About} />
+              <Route exact path="/en/projects" component={Projects} />
+              <Route exact path="/en/contact" component={Contact} />
+              <Route
+                path="*"
+                component={ErrorPage}
+                setLanguage={setLanguage}
+                language={language}
+              />
+            </Switch>
+            <a className="App-link" href="https://cheesefield.vercel.app/">
+              Go to second React app!
+            </a>
+            <Footer language={language} />
+          </Router>
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;
