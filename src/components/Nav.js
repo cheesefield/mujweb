@@ -233,7 +233,7 @@ function Nav(props) {
       <div>
         <nav className={navbar ? "sticky" : ""}>
           <NavLink to="/en" onClick={closeMobileMenu}>
-            <img src="/images/logo.png" alt="logo" />
+            <img src="../images/logo.png" alt="logo" />
           </NavLink>
           <ul className={click ? "navbar active" : "navbar"}>
             <li className="nav">
