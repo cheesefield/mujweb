@@ -92,13 +92,6 @@ function Domů() {
           <NavLink to="/projekty">
             <h3 className="home-button">Klikni zde pro hraní her</h3>
           </NavLink>
-          <a
-            href="https://t.me/joinchat/VFZHryJ-FXFSwTR-"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h3 className="home-button">Připojte se k naší Telegram skupině</h3>
-          </a>
         </section>
       </main>
     </div>

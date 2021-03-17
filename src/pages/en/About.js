@@ -69,7 +69,7 @@ function About() {
           margin: "0",
         }}
       >
-        <p>PREPARING...</p>
+        <p>WIP</p>
       </section>
     </div>
   );

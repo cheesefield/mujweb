@@ -123,13 +123,6 @@ function Home() {
           <NavLink to="/en/projects">
             <h3 class="home-button">Click here to play games</h3>
           </NavLink>
-          <a
-            href="https://t.me/joinchat/VFZHryJ-FXFSwTR-"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h3 class="home-button">Join our Telegram group</h3>
-          </a>
         </section>
       </main>
     </div>
