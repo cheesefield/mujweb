@@ -7,7 +7,7 @@ function Nav() {
     <div>
       <nav>
         <div className="logo">
-          <Link to="/">
+          <Link to="/projekty/u_krvaveho_barona">
             <img src="u_krvaveho_barona/images/logo.png" alt="logo" />
           </Link>
         </div>
