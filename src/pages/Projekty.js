@@ -47,7 +47,7 @@ function Projekty() {
                 listStyle: "none",
               }}
             >
-              <h2>1. Pololetí</h2>
+              <h2>1. pololetí</h2>
               <li>
                 <a href="projekty/zoo" title="Zoo" target="_blank">
                   Zoo
@@ -104,7 +104,7 @@ function Projekty() {
                 listStyle: "none",
               }}
             >
-              <h2>2. Pololetí</h2>
+              <h2>2. pololetí</h2>
               <li>
                 <a
                   href="projekty/dvousloupcovy_layout"
