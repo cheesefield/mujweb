@@ -16,16 +16,16 @@ function App() {
       <Router>
         <Nav />
         <Switch>
-          <Route exact path="u_krvaveho_barona/denni_menu">
+          <Route exact path="/u_krvaveho_barona/denni_menu">
             <DenniMenu />
           </Route>
-          <Route exact path="u_krvaveho_barona/stala_nabidka">
+          <Route exact path="/u_krvaveho_barona/stala_nabidka">
             <StalaNabidka />
           </Route>
-          <Route exact path="u_krvaveho_barona">
+          <Route exact path="/u_krvaveho_barona">
             <Domu />
           </Route>
-          <Route exact path="u_krvaveho_barona/kontakt">
+          <Route exact path="/u_krvaveho_barona/kontakt">
             <Kontakt />
           </Route>
         </Switch>

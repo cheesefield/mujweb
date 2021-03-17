@@ -15,7 +15,7 @@ function Nav() {
           <li>
             <NavLink
               exact
-              to="u_krvaveho_barona/denni_menu"
+              to="https://cheesefield.vercel.app/projekty/u_krvaveho_barona/denni_menu"
               activeClassName="active"
             >
               Denní menu
@@ -24,21 +24,25 @@ function Nav() {
           <li>
             <NavLink
               exact
-              to="u_krvaveho_barona/stala_nabidka"
+              to="https://cheesefield.vercel.app/projekty/u_krvaveho_barona/stala_nabidka"
               activeClassName="active"
             >
               Stálá nabídka
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="u_krvaveho_barona" activeClassName="active">
+            <NavLink
+              exact
+              to="https://cheesefield.vercel.app/projekty/u_krvaveho_barona"
+              activeClassName="active"
+            >
               Domů
             </NavLink>
           </li>
           <li>
             <NavLink
               exact
-              to="u_krvaveho_barona/kontakt"
+              to="https://cheesefield.vercel.app/projekty/u_krvaveho_barona/kontakt"
               activeClassName="active"
             >
               Kontakt
