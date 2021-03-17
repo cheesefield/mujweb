@@ -66,7 +66,7 @@ function Projects() {
                 listStyle: "none",
               }}
             >
-              <h2>HTML</h2>
+              <h2>1st semester</h2>
               <li>
                 <a href="../projects/zoo" title="Zoo" target="_blank">
                   Zoo
@@ -127,7 +127,7 @@ function Projects() {
                 listStyle: "none",
               }}
             >
-              <h2>HTML 2</h2>
+              <h2>2nd semester</h2>
               <li>
                 <a
                   href="../projects/dvousloupcovy_layout"
@@ -140,6 +140,15 @@ function Projects() {
               <li>
                 <a href="../projects/recepty" title="Recipes" target="_blank">
                   Recipes
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../projects/u_ruskeho_barona"
+                  title="U ruského barona(school project)"
+                  target="_blank"
+                >
+                  U ruského barona(school project)
                 </a>
               </li>
             </ul>

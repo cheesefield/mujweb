@@ -47,7 +47,7 @@ function Projekty() {
                 listStyle: "none",
               }}
             >
-              <h2>HTML</h2>
+              <h2>1. Pololetí</h2>
               <li>
                 <a href="projekty/zoo" title="Zoo" target="_blank">
                   Zoo
@@ -104,7 +104,7 @@ function Projekty() {
                 listStyle: "none",
               }}
             >
-              <h2>HTML 2</h2>
+              <h2>2. Pololetí</h2>
               <li>
                 <a
                   href="projekty/dvousloupcovy_layout"
@@ -117,6 +117,15 @@ function Projekty() {
               <li>
                 <a href="projekty/recepty" title="Recepty" target="_blank">
                   Recepty
+                </a>
+              </li>
+              <li>
+                <a
+                  href="projekty/u_ruskeho_barona"
+                  title="U ruského barona"
+                  target="_blank"
+                >
+                  U ruského barona
                 </a>
               </li>
             </ul>
