@@ -109,6 +109,7 @@ nav .logo {
 
 .logo img {
   height: 6rem;
+  border-radius: 50%;
 }
 
 h1 {

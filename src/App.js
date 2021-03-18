@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ReactDOM from "react-dom";
 import "./App.css";
-import FadeLoader from "react-spinners/FadeLoader";
-import { css } from "@emotion/core";
 // Components
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -20,63 +19,50 @@ import About from "./pages/en/About";
 import Projects from "./pages/en/Projects";
 import Contact from "./pages/en/Contact";
 
-const override = css`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-15%, -25%);
-`;
+const loader = document.querySelector(".loader");
+const hideLoader = () => loader.classList.add("loader--hide");
 
-function App() {
-  const [loading, setLoading] = useState(false);
+function App({ hideLoader }) {
   const [language, setLanguage] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-  }, []);
+  useEffect(hideLoader, [hideLoader]);
 
   return (
     <div className="App">
-      {loading ? (
-        <FadeLoader
-          color={"#333"}
-          loading={loading}
-          css={override}
-          height={25}
-          width={7}
-          radius={5}
-          margin={6}
-        />
-      ) : (
-        <Router>
-          <ScrollToTop />
-          <Nav setLanguage={setLanguage} language={language} />
-          <Switch>
-            <Route exact path="/" component={Domů} />
-            <Route exact path="/domu" component={Domů} />
-            <Route exact path="/o_mne" component={O_mne} />
-            <Route exact path="/projekty" component={Projekty} />
-            <Route exact path="/kontakt" component={Kontakt} />
-            <Route exact path="/en" component={Home} />
-            <Route exact path="/en/home" component={Home} />
-            <Route exact path="/en/about" component={About} />
-            <Route exact path="/en/projects" component={Projects} />
-            <Route exact path="/en/contact" component={Contact} />
-            <Route
-              path="*"
-              component={ErrorPage}
-              setLanguage={setLanguage}
-              language={language}
-            />
-          </Switch>
-          <Footer language={language} />
-        </Router>
-      )}
+      <Router>
+        <ScrollToTop />
+        <Nav setLanguage={setLanguage} language={language} />
+        <Switch>
+          <Route exact path="/" component={Domů} />
+          <Route exact path="/domu" component={Domů} />
+          <Route exact path="/o_mne" component={O_mne} />
+          <Route exact path="/projekty" component={Projekty} />
+          <Route exact path="/kontakt" component={Kontakt} />
+          <Route exact path="/en" component={Home} />
+          <Route exact path="/en/home" component={Home} />
+          <Route exact path="/en/about" component={About} />
+          <Route exact path="/en/projects" component={Projects} />
+          <Route exact path="/en/contact" component={Contact} />
+          <Route
+            path="*"
+            component={ErrorPage}
+            setLanguage={setLanguage}
+            language={language}
+          />
+        </Switch>
+        <Footer language={language} />
+      </Router>
     </div>
   );
 }
+
+setTimeout(
+  () =>
+    // the show/hide functions are passed as props
+    ReactDOM.render(
+      <App hideLoader={hideLoader} />,
+      document.getElementById("app")
+    ),
+  1000
+);
 
 export default App;
