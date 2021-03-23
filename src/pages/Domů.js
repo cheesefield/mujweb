@@ -47,40 +47,40 @@ function Domů() {
           <h3>Vytvářím webové stránky pomocí HTML, CSS a Javascriptu.</h3>
           <div id="images">
             <div className="container">
-              <img src="images/seznam_ukolu.png" alt="Seznam Úkolů" />
+              <img src="/images/seznam_ukolu.png" alt="Seznam Úkolů" />
               <div className="details">
                 <h3>Seznam úkolů</h3>
                 <p>
                   Seznam úkolů si zapamatuje všechny vaše povinnosti a vy už tak
                   nezapomenete na žádný úkol.
                 </p>
-                <a href="projekty/seznam_ukolu" target="_blank">
+                <a href="/projekty/seznam_ukolu" target="_blank">
                   <h3 className="button">Klikni zde</h3>
                 </a>
               </div>
             </div>
             <div className="container">
-              <img src="images/kurzovni_listek.png" alt="Kurzovní lístek" />
+              <img src="/images/kurzovni_listek.png" alt="Kurzovní lístek" />
               <div className="details">
                 <h3>Kurzovní lístek</h3>
                 <p>
                   Potřebujete vyměnit peníze a chcete předem přesně vědět, kolik
                   při aktuálním kurzu dostanete?
                 </p>
-                <a href="projekty/kurzovni_listek" target="_blank">
+                <a href="/projekty/kurzovni_listek" target="_blank">
                   <h3 className="button">Klikni zde</h3>
                 </a>
               </div>
             </div>
             <div className="container">
-              <img src="images/cesta_dolu.png" alt="Cesta dolů" />
+              <img src="/images/cesta_dolu.png" alt="Cesta dolů" />
               <div className="details">
                 <h3>Cesta dolů</h3>
                 <p>
                   Ovládáte šedou kouli, která se pohybuje na každé platformě,
                   dokud nespadnete skrz díru.
                 </p>
-                <a href="projekty/cesta_dolu" target="_blank">
+                <a href="/projekty/cesta_dolu" target="_blank">
                   <h3 className="button">Klikni zde</h3>
                 </a>
               </div>
