@@ -144,11 +144,11 @@ function Projects() {
               </li>
               <li>
                 <a
-                  href="../projects/u_ruskeho_barona"
-                  title="U ruského barona(school project)"
+                  href="../projects/u_krvaveho_barona"
+                  title="U krvavého barona(school project)"
                   target="_blank"
                 >
-                  U ruského barona(school project)
+                  U krvavého barona(school project)
                 </a>
               </li>
             </ul>
