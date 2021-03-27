@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #123;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+canvas {
+  border: 1px solid #000000;
+  background-color: #efefed;
+  height: 250px;
+  width: 390px;
+}
+
+h1 {
+  margin: 20px;
+  color: #efefed;
+  font-size: 3vw;
+}
