@@ -198,6 +198,11 @@ function Projects() {
                   Digit sum
                 </a>
               </li>
+              <li>
+                <a href="../projects/hodiny" title="Clock" target="_blank">
+                  Clock
+                </a>
+              </li>
             </ul>
           </section>
           <section className="projects">

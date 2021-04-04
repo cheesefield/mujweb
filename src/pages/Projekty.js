@@ -175,6 +175,11 @@ function Projekty() {
                   Ciferný součet
                 </a>
               </li>
+              <li>
+                <a href="projekty/hodiny" title="Hodiny" target="_blank">
+                  Hodiny
+                </a>
+              </li>
             </ul>
           </section>
           <section className="projects">
