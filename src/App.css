@@ -532,7 +532,7 @@ footer p {
 }
 .menu-btn__burger {
   color: var(--white);
-  padding-right: 10px;
+  margin-right: 10px;
   margin-bottom: 20px;
   transition: 0.6s;
 }
