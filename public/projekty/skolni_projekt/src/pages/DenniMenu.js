@@ -8,7 +8,9 @@ function DenniMenu() {
       <Helmet>
         <title>Denní menu - U Krvavého barona</title>
       </Helmet>
-      <h1>Denní menu</h1>
+      <main>
+        <h1>Denní menu</h1>
+      </main>
     </div>
   );
 }

@@ -1,22 +1,37 @@
 nav {
-  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 1.5rem 3rem;
   background-color: #333;
+  user-select: none;
+  font-family: Optima, sans-serif;
+  z-index: 20;
+}
+
+nav img {
+  position: relative;
+  height: 6rem;
+  z-index: 1;
 }
 
 nav ul {
-  text-align: right;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  padding: 2.3rem 1.5rem;
+  padding: 0;
 }
 
 nav ul li {
-  float: none;
-  display: inline-block;
-}
-
-nav ul li:nth-child(1),
-nav ul li:nth-child(2) {
-  float: left;
+  position: relative;
+  list-style: none;
 }
 
 nav ul li a {
@@ -100,17 +115,60 @@ nav ul li a:hover:after {
   opacity: 1;
 }
 
-nav .logo {
+nav .menu-btn__burger,
+nav .menu-btn {
+  display: none;
+}
+
+.menu-btn__burger {
+  width: 3rem;
+  height: 0.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  margin-top: 1.5rem;
+  width: 3rem;
+  height: 0.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
 }
 
-.logo img {
-  height: 6rem;
+.menu-btn__burger::before {
+  transform: translateY(-1rem);
 }
 
+.menu-btn__burger::after {
+  transform: translateY(1rem);
+}
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-4.5rem);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(3.5rem, -3.5rem);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+}
+
+.menu-btn__burger {
+  color: #fff;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  transition: 0.6s;
+}
+main {
+  padding: 92px 0;
+}
 h1 {
   text-align: center;
   font-size: 3.5rem;
@@ -126,4 +184,52 @@ footer {
 footer p {
   color: #efefed;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  nav .menu-btn__burger {
+    display: flex;
+    cursor: pointer;
+  }
+  nav .menu-btn {
+    position: absolute;
+    right: 1rem;
+    top: 5.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    width: 4.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+  }
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    height: 0;
+    top: -30rem;
+    opacity: 0;
+    transition: 0.7s;
+  }
+  nav ul li {
+    display: flex;
+    color: #777;
+    font-size: 4vh;
+  }
+  nav ul li a {
+    margin: 0.3rem 1rem;
+  }
+  nav ul.active {
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    top: -4.9rem;
+    transition: 0.7s;
+  }
 }

@@ -1,22 +1,31 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 
 function Nav() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
+  const closeMobileMenu = () => {
+    setClick(false);
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <nav>
         <div className="logo">
-          <Link to="/projekty/u_krvaveho_barona">
-            <img src="u_krvaveho_barona/images/logo.png" alt="logo" />
-          </Link>
+          <NavLink to="/" onClick={closeMobileMenu}>
+            <img src="/images/logo.png" alt="logo" />
+          </NavLink>
         </div>
-        <ul>
+        <ul className={click ? "navbar active" : "navbar"}>
           <li>
             <NavLink
               exact
               to="/projekty/u_krvaveho_barona/denni_menu"
               activeClassName="active"
+              onClick={closeMobileMenu}
             >
               Denní menu
             </NavLink>
@@ -26,6 +35,7 @@ function Nav() {
               exact
               to="/projekty/u_krvaveho_barona/stala_nabidka"
               activeClassName="active"
+              onClick={closeMobileMenu}
             >
               Stálá nabídka
             </NavLink>
@@ -35,6 +45,7 @@ function Nav() {
               exact
               to="/projekty/u_krvaveho_barona"
               activeClassName="active"
+              onClick={closeMobileMenu}
             >
               Domů
             </NavLink>
@@ -44,11 +55,18 @@ function Nav() {
               exact
               to="/projekty/u_krvaveho_barona/kontakt"
               activeClassName="active"
+              onClick={closeMobileMenu}
             >
               Kontakt
             </NavLink>
           </li>
         </ul>
+        <div
+          onClick={handleClick}
+          className={click ? "menu-btn open" : "menu-btn"}
+        >
+          <div className="menu-btn__burger"></div>
+        </div>
       </nav>
     </div>
   );

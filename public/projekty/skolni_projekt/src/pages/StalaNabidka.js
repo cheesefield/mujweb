@@ -8,7 +8,9 @@ function StalaNabidka() {
       <Helmet>
         <title>Stálá nabídka - U Krvavého barona</title>
       </Helmet>
-      <h1>Stálá nabídka</h1>
+      <main>
+        <h1>Stálá nabídka</h1>
+      </main>
     </div>
   );
 }

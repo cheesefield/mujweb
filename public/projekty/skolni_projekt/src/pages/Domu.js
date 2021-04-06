@@ -8,7 +8,9 @@ function Domu() {
       <Helmet>
         <title>U Krvavého barona</title>
       </Helmet>
-      <h1>Domů</h1>
+      <main>
+        <h1>Domů</h1>
+      </main>
     </div>
   );
 }

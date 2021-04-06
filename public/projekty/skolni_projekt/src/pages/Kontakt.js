@@ -8,7 +8,9 @@ function Kontakt() {
       <Helmet>
         <title>Kontakt - U Krvavého barona</title>
       </Helmet>
-      <h1>Kontakt</h1>
+      <main>
+        <h1>Kontakt</h1>
+      </main>
     </div>
   );
 }
