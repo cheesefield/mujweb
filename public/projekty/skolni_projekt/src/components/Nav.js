@@ -16,7 +16,7 @@ function Nav() {
       <nav>
         <div className="logo">
           <NavLink to="/" onClick={closeMobileMenu}>
-            <img src="/images/logo.png" alt="logo" />
+            <img src="/projekty/u_krvaveho_barona/images/logo.png" alt="logo" />
           </NavLink>
         </div>
         <ul className={click ? "navbar active" : "navbar"}>
